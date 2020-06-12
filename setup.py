@@ -20,7 +20,7 @@ setup(name='buildbot-gitpull',
       ],
       entry_points={
           "buildbot.steps": [
-              "Gitea = buildbot_gitpull.pull:GitPull"
+              "Gitpull = buildbot_gitpull.pull:GitPull"
           ],
       },
       classifiers=[
