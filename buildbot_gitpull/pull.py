@@ -44,7 +44,7 @@ class GitPull(buildstep.BuildStep, GitStepMixin, CompositeStepMixin):
     def _getSshDataWorkDir(self):
         return self.workdir
     
-    def _isSshPrivateKeyNeededForGitCommand(self):
+    def _isSshPrivateKeyNeededForGitCommand(self, command):
         return True
 
     @defer.inlineCallbacks
