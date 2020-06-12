@@ -38,9 +38,6 @@ class GitPull(buildstep.BuildStep, GitStepMixin, CompositeStepMixin):
 
         self.setupGitStep()
 
-        if not self.branch:
-            bbconfig.error('GitPull: must provide branch')
-
     def _getSshDataWorkDir(self):
         return self.workdir
 
